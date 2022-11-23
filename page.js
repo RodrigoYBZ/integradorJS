@@ -13,12 +13,17 @@ const toggleMenu = (e) => {
 
 burger.addEventListener("click", function (){
     toggleMenu();
-    if (document.querySelector(".burger .links_2")){
-        open = true;
-    }else{
-        open = false;
-    };
+    // if (document.querySelector(".burger .links_2")){
+    //     open = true;
+    // }else{
+    //     open = false;
+    // };
 })
 
-// FIN RESPONSIVE BURGER MENU 
+links.addEventListener("scroll", () => {
+    links.classList.remove("links");
+    links.classList.remove("links_dos");
+})
+
+// END RESPONSIVE BURGER MENU 
 

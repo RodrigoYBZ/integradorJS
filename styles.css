@@ -67,19 +67,14 @@ li{
     .container > ul > p > a {
         display: none;
     }
-    .nav__logo {
-        /* display: none; */
+    /* .nav__logo {
+        display: none;
+    } */
+    .nav__logo > a > h1 {
+        font-size: clamp(1.5rem, 3vw, 3rem);
     }
     .nav__list {
         gap: 14px;
-    }
-    .toggle__btn {
-        background-color: var(--black);
-        color: var(--amarillo);
-        font-size: 5rem;
-        border: none;
-        cursor: pointer;
-        display: block;
     }
     .register__section {
         display: flex;
@@ -88,6 +83,11 @@ li{
     .register-form {
         display: flex;
         flex-direction: column;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .nav__list {
+        padding-right: 130px;
     }
 }
 
@@ -101,14 +101,8 @@ li{
     line-height: 1rem;
     background-color: var(--black);
 }
-.toggle__btn {
-    background-color: var(--black);
-    color: var(--amarillo);
-    font-size: 5rem;
-    border: none;
-    cursor: pointer;
-    display: none;
-}
+
+
 .nav__center{
     display: flex;
     justify-content: space-between;
@@ -133,12 +127,12 @@ li{
     border-radius: 5px;
     color: var(--amarillo);
 }
-.nav__list span{
+.nav__list span a{
     display: inline-block;
     font-size: 3.5rem;
     margin-top: .2rem;
     margin-right: 2rem;
-    color: rgba(219, 216, 39, 0.541);
+    color: var(--amarillo);
 }
 .carrito__icon{
     position: relative;
