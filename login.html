@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YOURtime</title>
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Box icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- Sweet Alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+
+    <link rel="stylesheet" href="/login.css">
+
+  </head>
+
+  <body>
+    
+    <div class="register_containter">
+    <header class="register__login__header">
+      <a href="index.html">
+        <div class="nav__logo">
+          <h1>YOUR<span>time</span></h1>
+        </div>
+      </a>
+      <ul class="nav__list">
+        <p><a href="index.html">Inicio</a></p>
+        <p><a href="">Productos</a></p>
+        <p><a href="">Contacto</a></p>
+        <span>
+          <a href="index.html"><i class='bx bx-home-alt-2' ></i></a>
+        </span>
+      </ul>
+    </header>
+
+
+    <!-- Login Form  -->
+    <section class="login__section">
+      <h1>¡Inicia Sesion!</h1>
+      <div class="login-form">
+        <div class="img__container">
+          <img src="/img/reloj.gif" alt="" />
+        </div>
+
+        <div class="login-form-info">
+        <form>
+          <div class="login-data">
+            <label for="exampleInputEmail1" class="form-label"></label>
+            <input
+              type="email"
+              placeholder="    EMAIL"
+            />
+          </div>
+          <div class="login-data">
+            <label for="password"
+              ></label
+            >
+            <input
+              type="password"
+              placeholder="     CONTRASEÑA"
+            />
+          </div>
+          <div class="form__check">
+            <!-- <input
+              type="checkbox"
+            />
+            <label class="form-check-label" for="check"
+              >Recordar Contraseña</label
+            > -->
+            <label class="container">
+                <input type="checkbox" checked="checked">
+                <div class="checkmark"></div>Recordar Contraseña 
+              </label>
+          </div>
+          <div class="btn_and_login">
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+            <div class="forgot-password">
+                <p><a href="index.html">¿Olvidaste tu contraseña?</a></p>
+              </div>  
+            <div class="havent_account">
+              <p><a href="register.html">¿No posee cuenta? Cree una!</a></p>
+            </div>  
+            <div class="socials-login">
+                <h2>O ingrese mediante:</h2>
+                <div class="social-accounts">
+                <div><img src="/img/facebook_icon.svg" alt=""> Facebook</div>
+                <div><img src="/img/google_icon.svg" alt=""> Google</div>
+                <div><img src="/img/apple_icon.svg" alt=""> Apple</div>
+                </div>
+            </div>
+            </div>
+        </form>
+        </div>
+      </div>
+    </section>
+
+    <!--Carrito-->
+
+
+    <footer class="main__footer">
+      <div class="footer__info">
+        <p><i class='bx bx-map'></i>Encontranos en: Avenida Social 4350</p>
+        <p><i class='bx bx-phone'></i>Tel.: 03410000000</p>
+      </div>
+      <div>
+        <div class="footer__data">
+          <h2>Conecta en nuestras redes:</h2>
+          <div class="footer__socials">
+            <a href=""><i class='bx bxl-facebook-circle'></i></a>
+            <a href=""><i class='bx bxl-instagram' ></i></a>
+            <a href=""><i class='bx bxl-whatsapp' ></i></a>
+            <a href=""><i class='bx bxl-linkedin' ></i></a>
+          </div>
+        </div>
+
+    </footer>
+  </div>
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>

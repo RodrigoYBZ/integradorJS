@@ -1,0 +1,328 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    --black: #222;
+    --white: #fff;
+    --azul: #0751a6;
+    --amarillo: #d3b717;
+    --rojo: #e71247;
+    --grey: rgb(46, 45, 45);
+}
+a{
+    text-decoration: none;
+}
+ul,
+li{
+    list-style: none;
+}
+
+/* Page Header  */
+
+.burger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: var(--amarillo);
+    height: 100%;
+    width: 70px;
+    text-align: center;
+  
+}
+.burger > i {
+    vertical-align: top;
+    padding: 25px;
+}
+.page_header{
+    background-color: var(--black);
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--white);    
+}
+.nav__logo{
+    color: var(--white);
+}
+.nav__logo span{
+    color: var(--amarillo);
+}
+.nav__logo > h1 {
+    font-size: clamp(1.5rem, 3vw, 3rem);
+}
+.links {
+    display: flex;
+    gap: 50px;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    font-weight: 300;
+}
+.page_header ul > li > a {
+    color: var(--white);
+}
+.page_header ul > li > a:hover{
+    font-size: 1.5rem;
+    color: var(--amarillo);
+    transition: all .5s ease;
+}
+.page_header > ul > li:last-child {
+    display: none;
+}
+.icon_page > a{
+    font-size: 30px;
+    color: var(--amarillo);
+    padding: 0 10px;
+}
+
+
+/* MEDIA QUERIES HEADER */
+
+@media (width < 768px) {
+    .burger {
+        display: block;
+    }
+
+    .links {
+        position: fixed;
+        font-size: clamp(1.5rem, 4vw, 4rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: var(--grey);
+        width: 70%;
+        height: 100%;
+        top: 80px;
+        left: 0;
+        transform: translateX(-100%);
+        padding-bottom: 100px;
+    }
+    .links_dos {
+        transform: translateX(0%);
+    }
+    .icon_page > a:last-child {
+        display: none;
+    }
+    .page_header > ul > li:last-child {
+        display: inline-block;
+        padding: 15px;
+        border-style: groove;
+        background-color: var(--black);
+    }
+}
+
+/* Hero  */
+
+.hero_container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.hero_txt {
+    width: 668px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    padding: 30px;
+}
+.hero_txt > h2 {
+    font-size: 50px;
+}
+.hero_img {
+    width: 635px;
+}
+.hero_img > img {
+    width: 100%;
+    height: 100%;
+    min-width: 400px;
+}
+.hero_txt > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding-left: 31px;
+    font-size: clamp(16px, 19px, 20px);    
+}
+.hero_btn {
+    display: flex;
+    gap: 30px;
+    justify-content: start;
+    padding-left: 31px;
+}
+
+
+
+@media (width < 480px) {
+    .hero_btn {
+        padding-left: 0;
+    }
+    .hero_txt > ul {
+        padding-left: 7px;
+    }
+    
+}
+/* HERO BUTTONS STYLES */
+
+.fancy {
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 1.25em 2em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    font-size: 13px;
+   }
+   
+   .fancy::before {
+    content: " ";
+    width: 1.5625rem;
+    height: 2px;
+    background: black;
+    top: 50%;
+    left: 1.5em;
+    position: absolute;
+    transform: translateY(-50%);
+    transform-origin: center;
+    transition: background 0.3s linear, width 0.3s linear;
+   }
+   
+   .fancy .text {
+    font-size: 1.125em;
+    line-height: 1.33333em;
+    padding-left: 2em;
+    display: block;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+   }
+   
+   .fancy .top-key {
+    height: 2px;
+    width: 1.5625rem;
+    top: -2px;
+    left: 0.625rem;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, left 0.3s ease-out;
+   }
+   
+   .fancy .bottom-key-1 {
+    height: 2px;
+    width: 1.5625rem;
+    right: 1.875rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+   }
+   
+   .fancy .bottom-key-2 {
+    height: 2px;
+    width: 0.625rem;
+    right: 0.625rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+   }
+   
+   .fancy:hover {
+    color: white;
+    background: black;
+   }
+   
+   .fancy:hover::before {
+    width: 0.9375rem;
+    background: white;
+   }
+   
+   .fancy:hover .text {
+    color: white;
+    padding-left: 1.5em;
+   }
+   
+   .fancy:hover .top-key {
+    left: -2px;
+    width: 0px;
+   }
+   
+   .fancy:hover .bottom-key-1,
+    .fancy:hover .bottom-key-2 {
+    right: 0;
+    width: 0;
+   }
+/* END HERO BUTTONS STYLES  */
+
+/* History  */
+
+.history_container {
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.history_img {
+    width: 650px;
+    padding-left: 50px;
+    height: 450px;
+}
+.history_img > img {
+    width: 100%;
+    height: 100%;
+}
+.history_txt {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px;
+}
+.history_txt > h2 {
+    font-size: 50px;
+}
+
+.history_txt > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    font-size: clamp(16px, 19px, 20px);
+}
+.history_btn {
+    display: flex;
+}
+
+@media (width < 480px) {
+    .history_img {
+    padding-left: 0px;
+    height: 300px;
+    width: 400px;
+    padding-right: 0;
+    }
+}
