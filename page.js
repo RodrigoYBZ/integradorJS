@@ -13,11 +13,6 @@ const toggleMenu = (e) => {
 
 burger.addEventListener("click", function (){
     toggleMenu();
-    // if (document.querySelector(".burger .links_2")){
-    //     open = true;
-    // }else{
-    //     open = false;
-    // };
 })
 
 links.addEventListener("scroll", () => {
